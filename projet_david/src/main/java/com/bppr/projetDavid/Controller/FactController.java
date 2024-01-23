@@ -30,5 +30,10 @@ public class FactController {
         return factService.CreateId(factModel);
     }
 
+    @DeleteMapping(path = "{id}")
+    public void FactDelete(@PathVariable(name = "id") Integer id ){
+        factService.deleteFact(id);
+    }
+
 
 }
