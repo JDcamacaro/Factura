@@ -16,7 +16,7 @@ public class FactController {
     @Autowired
     FactService factService;
 
-    @GetMapping(path = "/all")
+    @GetMapping()
     public List<FactModel> FactAll() {
         return factService.getAll();
     }
